@@ -1,0 +1,11 @@
+astah-uml
+google-chrome
+imhex-bin
+libinput-gestures
+rars
+spicetify-cli
+spicetify-marketplace-bin
+swayr
+ttf-ms-win11-auto
+visual-studio-code-bin
+yay
