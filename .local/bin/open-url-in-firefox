@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Ensure a file was provided as an argument
+if [ -z "$1" ]; then
+    echo "Usage: $0 /path/to/file.url"
+    exit 1
+fi
+
+# Find the line starting with "URL=", extract everything after the '=',
+# and remove any trailing carriage return characters (\r) from Windows.
+URL=$(grep -i '^URL=' "$1" | head -n 1 | cut -d'=' -f2- | tr -d '\r')
+
+# If we successfully extracted a URL, open it directly with firefox.
+if [ -n "$URL" ]; then
+    firefox "$URL"
+else
+    # You can use notify-send to get a desktop notification on error
+    notify-send "URL Opener Error" "Could not find a valid URL in the file."
+fi
