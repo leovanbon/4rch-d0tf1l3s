@@ -1,0 +1,29 @@
+[CompactMode]
+PreviewSize=80
+
+[DetailsMode]
+PreviewSize=32
+
+[General]
+DoubleClickViewAction=show_hidden_files
+ShowFullPath=true
+ShowStatusBar=FullWidth
+ShowZoomSlider=true
+Version=202
+ViewPropsTimestamp=2025,12,17,16,23,30.69
+
+[IconsMode]
+PreviewSize=80
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,com.github.xournalpp.xournalpp,audiothumbnail,glycin-heif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,heif,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,gsthumbnail,glycin-svg,svgthumbnail,gsf-office
+
+[UiSettings]
+ColorScheme=BreezeLight
