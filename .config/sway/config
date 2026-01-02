@@ -62,6 +62,8 @@ bindsym $mod1+Tab exec swayr next-window current-workspace
 bindsym $mod1+Shift+Tab exec swayr prev-window current-workspace
 bindsym $mod+w scratchpad show
 bindsym $mod+Shift+w move scratchpad
+bindsym $mod+v exec cliphist list | fuzzel -d | cliphist decode | wl-copy
+bindsym $mod+period exec BEMOJI_PICKER_CMD="fuzzel -d" bemoji -t
 
 #move
 bindsym $mod+Left move left 50
@@ -69,8 +71,8 @@ bindsym $mod+Down move down 50
 bindsym $mod+Up move up 50
 bindsym $mod+Right move right 50
 
-bindsym $mod+h split h
-bindsym $mod+v split v
+# bindsym $mod+h split h
+# bindsym $mod+v split v
 
 bindsym $mod+f fullscreen toggle
 #bindsym $mod+s layout stacking
@@ -148,6 +150,9 @@ exec fcitx5
 # exec gammastep
 exec systemctl --user import-environment SWAYSOCK WAYLAND_DISPLAY
 exec_always systemctl --user restart swayrd.service
+# Start clipboard manager (store text and images)
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 
 exec swaybg -o eDP-1 -i "/home/bon/Pictures/praise the beer.jpg" -m fit
 #exec swaybg -o eDP-1 -i "/home/bon/Pictures/KZS73-75_Poster.jpg" -m fit

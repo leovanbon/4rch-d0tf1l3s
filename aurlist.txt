@@ -1,11 +1,11 @@
 astah-uml
-google-chrome
+bemoji
 imhex-bin
 libinput-gestures
 rars
 spicetify-cli
 spicetify-marketplace-bin
 swayr
+ttf-apple-emoji
 ttf-ms-win11-auto
 visual-studio-code-bin
-yay
